@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root 'pages#residential'
   root 'pages#commercial'
   root 'pages#quotes'
+  get "quote" => "pages#quote"
 end

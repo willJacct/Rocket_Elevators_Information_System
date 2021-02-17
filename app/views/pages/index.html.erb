@@ -1,170 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<link rel="icon" href="assets/images/Logo/web_logo.png">
-	<meta charset="utf-8" />
-	<title>Rocket Elevators - Homepage</title>
-	<meta name="description" content="" />
-	<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
-
-	<!-- mobile settings -->
-	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
-	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-
-	<!-- WEB FONTS : use %7C instead of | (pipe) -->
-	<link
-		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
-		rel="stylesheet" type="text/css" />
-
-	<!-- CORE CSS -->
-	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
-	<!-- REVOLUTION SLIDER -->
-	<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
-	<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
-
-	<!-- THEME CSS -->
-	<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-
-	<!-- PAGE LEVEL SCRIPTS -->
-	<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
-</head>
-
-<!--
-		AVAILABLE BODY CLASSES:
-		
-		smoothscroll 			= create a browser smooth scroll
-		enable-animation		= enable WOW animations
-		bg-grey					= grey background
-		grain-grey				= grey grain background
-		grain-blue				= blue grain background
-		grain-green				= green grain background
-		grain-blue				= blue grain background
-		grain-orange			= orange grain background
-		grain-yellow			= yellow grain background
-		
-		boxed 					= boxed layout
-		pattern1 ... patern11	= pattern background
-		menu-vertical-hide		= hidden, open on click
-		
-		BACKGROUND IMAGE [together with .boxed class]
-		
-	-->
-
-<body class="smoothscroll enable-animation">
-
-	<!-- wrapper -->
-	<div id="wrapper">
-
-		<!-- 
-				AVAILABLE HEADER CLASSES
-				Default nav height: 96px
-				.header-md 		= 70px nav height
-				.header-sm 		= 60px nav height
-				.b-0 		= remove bottom border (only with transparent use)
-				.transparent	= transparent header
-				.translucent	= translucent header
-				.sticky			= sticky header
-				.static			= static header
-				.dark			= dark header
-				.bottom			= header on bottom
-				
-				shadow-before-1 = shadow 1 header top
-				shadow-after-1 	= shadow 1 header bottom
-				shadow-before-2 = shadow 2 header top
-				shadow-after-2 	= shadow 2 header bottom
-				shadow-before-3 = shadow 3 header top
-				shadow-after-3 	= shadow 3 header bottom
-				.clearfix		= required for mobile menu, do not remove!
-				Example Usage:  class="clearfix sticky header-sm transparent b-0"
-			-->
-		<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
-
-			<!-- TOP NAV -->
-			<header id="topNav">
-				<div class="container">
-
-					<!-- Mobile Menu Button -->
-					<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
-						<i class="fa fa-bars"></i>
-					</button>
-
-					<!-- Logo -->
-					<a class="logo float-left scrollTo" href="#top">
-
-						<%= image_tag("Logo/logo.png", :alt => "Rocket Elevators Logo", width: '150px') %>
-					</a>
-
-					<!-- 
-							Top Nav 
-							
-							AVAILABLE CLASSES:
-							submenu-dark = dark sub menu
-						-->
-					<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
-						<nav class="nav-main">
-
-							<!-- 
-									.nav-onepage
-									Required for onepage navigation links
-									
-									Add .external for an external link!
-								-->
-							<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-								<li class="active">
-									<!-- HOME -->
-									<a id="home-nav" href="#">
-										HOME
-									</a>
-								</li>
-								<li>
-									<!-- SERVICES -->
-									<a id="services-nav" href="#services">
-										SERVICES
-									</a>
-								</li>
-								<li>
-									<!-- PORTFOLIO -->
-									<a id="portfolio-nav" href="#portfolio">
-										PORTFOLIO
-									</a>
-								</li>
-								<li>
-									<!-- NEWS -->
-									<a id="news-nav" href="#news">
-										NEWS
-									</a>
-								</li>
-
-								<li>
-									<!-- CLIENTS -->
-									<a id="clients-nav" href="#clients">
-										CLIENTS
-									</a>
-								</li>
-
-								<li>
-									<!-- CONTACT -->
-									<a id="contact-nav" href="#contact">
-										CONTACT
-									</a>
-								</li>
-							</ul>
-
-						</nav>
-					</div>
-
-				</div>
-			</header>
-			<!-- /Top Nav -->
-
-		</div>
-
-
-
 		<!-- REVOLUTION SLIDER -->
 		<div class="slider fullwidthbanner-container roundedcorners">
 			<div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationStyle="preview2">
@@ -357,7 +190,7 @@
 
 
 		<!-- Parallax -->
-		<section class="parallax parallax-1" style="background-image: url('assets/images/demo_file/34-min.jpg');">
+		<section class="parallax parallax-1" style="background-image: url('demo_file/34-min.jpg');">
 			<div class="overlay dark-5"></div>
 			<div class="container">
 				<div class="text-center">
@@ -604,8 +437,8 @@
 							<figure>
 
 							<%= image_tag(" projects_awards/project3.jpg", :class => "img-fluid", :width => "600", :height => "399", :alt => "Dinning room with elevator") %>
-								<img class="img-fluid" src="assets/images/ projects_awards/project5.jpg" width="600"
-									height="399" alt="dinning room with elevator">
+								<!--img class="img-fluid" src="assets/images/ projects_awards/project5.jpg" width="600"
+									height="399" alt="dinning room with elevator"-->
 							</figure>
 
 							<div class="item-box-desc">
@@ -628,8 +461,8 @@
 							<figure>
 
 							<%= image_tag(" projects_awards/project6.png", :class => "img-fluid", :width => "600", :height => "399", :alt => "TD elevators") %>
-								<img class="img-fluid" src="assets/images/ projects_awards/project6.png" width="600"
-									height="399" alt="TD elevators">
+								<!--img class="img-fluid" src="assets/images/ projects_awards/project6.png" width="600"
+									height="399" alt="TD elevators"-->
 							</figure>
 
 							<div class="item-box-desc">
@@ -651,8 +484,8 @@
 							<figure>
 
 							<%= image_tag(" projects_awards/project7.jpg", :class => "img-fluid", :width => "600", :height => "399", :alt => "Buenos Aires courthouse elevator") %>
-								<img class="img-fluid" src="assets/images/ projects_awards/project7.jpg" width="600"
-									height="399" alt="Buenos Aires courthouse elevator">
+								<!--img class="img-fluid" src="assets/images/ projects_awards/project7.jpg" width="600"
+									height="399" alt="Buenos Aires courthouse elevator"-->
 							</figure>
 
 							<div class="item-box-desc">
@@ -674,42 +507,7 @@
 		</section>
 		<!-- /PORTFOLIO -->
 
-
-
-
-		<!-- Team Section -->
-		<section id="team" class="section-xs dark">
-			<div class="container">
-
-				<div class="owl-carousel text-center owl-testimonial m-0"
-					data-plugin-options='{"singleItem": true, "autoPlay": 3500, "navigation": false, "pagination": true, "transitionStyle":"fade"}'>
-					<div id="CEO" class="testimonial">
-						<figure>
-							<img class="rounded" src="assets/images/Team/CEO.jpg" alt="CEO photo" />
-						</figure>
-						<div class="testimonial-content p-0">
-							<p class="lead">Rocket Elevators Inc. CEO</p>
-							<cite>Serge Savoie</cite>
-						</div>
-					</div>
-					<div id="employee" class="testimonial">
-						<figure>
-							<img class="rounded" src="assets/images/Team/employee-of-the-month.jpg" alt="employee of the month photo" />
-						</figure>
-						<div class="testimonial-content p-0">
-							<p class="lead">Employee of the month.</p>
-							<cite>Tatiana Ramirez</cite>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</section>
-		<!-- /Team section -->
-
-
-
-
+ 
 
 		<!-- News -->
 		<section id="news">
@@ -721,8 +519,12 @@
 					data-plugin-options='{"singleItem": false, "items":"4", "autoPlay": 4000, "navigation": true, "pagination": false}'>
 					<div class="img-hover">
 						<a href="https://elevatortoday.com/2020/06/27/schindler-cleancall/">
+<<<<<<< HEAD
 							
 							<%= image_tag("News/new1.jpg", :alt => "person calling elevator", width: '150px') %>
+=======
+							<img class="img-fluid" src="<%= asset_path( 'News/new1.jpg' ) %>", alt="person calling elevator">
+>>>>>>> 672dfda96bd0e1d49d5f9f2ab4258a402c978da3
 						</a>
 
 						<h4 class="text-left mt-20"><a
@@ -736,8 +538,12 @@
 					<div class="img-hover">
 						<a
 							href="https://elevatortoday.com/2016/02/07/internet-of-things-transforming-elevator-maintenance/">
+<<<<<<< HEAD
 							
 							<%= image_tag("News/new2.jpg", :alt => "internet", width: '150px') %>
+=======
+							<img class="img-fluid" src="<%= asset_path( 'News/new2.jpg' ) %>", alt="internet">
+>>>>>>> 672dfda96bd0e1d49d5f9f2ab4258a402c978da3
 						</a>
 
 						<h4 class="text-left mt-20"><a
@@ -748,8 +554,12 @@
 					</div>
 					<div class="img-hover">
 						<a href="https://elevatortoday.com/2012/10/13/mezolift-first-solar-elevator/">
+<<<<<<< HEAD
 							
 							<%= image_tag("News/new3.jpg", :alt => "person calling elevator", width: '150px') %>
+=======
+							<img class="img-fluid" src="<%= asset_path( 'News/new3.jpg' ) %>", alt="person calling elevator">
+>>>>>>> 672dfda96bd0e1d49d5f9f2ab4258a402c978da3
 						</a>
 
 						<h4 class="text-left mt-20"><a
@@ -761,8 +571,12 @@
 					<div class="img-hover">
 						<a
 							href="https://elevatortoday.com/2014/11/27/multi-first-rope-free-elevator-system-thyssenkrupp/">
+<<<<<<< HEAD
 							
 							<%= image_tag("News/new4.jpg", :alt => "free elevator structure", width: '150px') %>
+=======
+							<img class="img-fluid" src="<%= asset_path( 'News/new4.jpg' ) %>", alt="free elevator structure">
+>>>>>>> 672dfda96bd0e1d49d5f9f2ab4258a402c978da3
 						</a>
 
 						<h4 class="text-left mt-20"><a
@@ -773,8 +587,12 @@
 					</div>
 					<div class="img-hover">
 						<a href="https://elevatortoday.com/2017/01/15/elevator-made-out-of-composite-materials/">
+<<<<<<< HEAD
 							
 							<%= image_tag("News/new5.jpg", :alt => "elevator cabine", width: '150px') %>
+=======
+							<img class="img-fluid" src="<%= asset_path( 'News/new5.jpeg' ) %>", alt="elevator cabine">
+>>>>>>> 672dfda96bd0e1d49d5f9f2ab4258a402c978da3
 						</a>
 						<h4 class="text-left mt-20"><a
 								href="https://elevatortoday.com/2017/01/15/elevator-made-out-of-composite-materials/">Elevator
@@ -785,8 +603,12 @@
 					<div class="img-hover">
 						<a
 							href="https://elevatortoday.com/2018/05/25/ontario-passes-first-world-legislation-elevator-repair-times/">
+<<<<<<< HEAD
 							<%= image_tag("News/new6.jpg", :alt => "paper notice", width: '150px') %>
 							
+=======
+							<img class="img-fluid" src="<%= asset_path( 'News/new6.jpg' ) %>", alt="paper notice">
+>>>>>>> 672dfda96bd0e1d49d5f9f2ab4258a402c978da3
 						</a>
 						<h4 class="text-left mt-20"><a
 								href="https://elevatortoday.com/2018/05/25/ontario-passes-first-world-legislation-elevator-repair-times/">Ontario
@@ -814,58 +636,58 @@
 					<li class="col-md-3 col-sm-3 col-6">
 
 						<%# <img class="img-fluid" src="assets/images/Clients/videotron.png" alt="client-videotron" /> %>
-						<%= image_tag("Clients/videotron.png", :alt => "client-videotron", width: '150px') %>
+						<%= image_tag("Clients/videotron.png", :alt => "client-videotron", width: '150px', class:"img-fluid") %>
 
 					</li>
 					<li class="col-md-3 col-sm-3 col-6">
 						<%# <img class="img-fluid" src="assets/images/Clients/origine.png" alt="client-origine" /> %>
-						<%= image_tag("Clients/origine.png", :alt => "client-origine", width: '150px') %>
+						<%= image_tag("Clients/origine.png", :alt => "client-origine", width: '150px', class:"img-fluid") %>
 					</li>
 					<li class="col-md-3 col-sm-3 col-6">
 						<%# <img class="img-fluid" src="assets/images/Clients/Fairmont.png" alt="client-fairmont" /> %>
-						<%= image_tag("Clients/Fairmont.png", :alt => "client-fairmont", width: '150px') %>
+						<%= image_tag("Clients/Fairmont.png", :alt => "client-fairmont", width: '150px', class:"img-fluid") %>
 
 					</li>
 					<li class="col-md-3 col-sm-3 col-6">
 						<%# <img class="img-fluid" src="assets/images/Clients/Laberge.png" alt="client-laberge" /> %>
-						<%= image_tag("Clients/Laberge.png", :alt => "client-laberge", width: '150px') %>
+						<%= image_tag("Clients/Laberge.png", :alt => "client-laberge", width: '150px', class:"img-fluid") %>
 					</li>
 					<li class="col-md-3 col-sm-3 col-6">
 						<a href="">
 							<%# <img class="img-fluid" src="assets/images/Clients/quebec.png" alt="client-quebec city" /> %>
-							<%= image_tag("Clients/quebec.png", :alt => "client-quebec city", width: '150px') %>
+							<%= image_tag("Clients/quebec.png", :alt => "client-quebec city", width: '150px', class:"img-fluid") %>
 						</a>
 					</li>
 					<li class="col-md-3 col-sm-3 col-6">
 						<%# <img class="img-fluid" src="assets/images/Clients/Montreal.png" alt="client-montreal" /> %>
-						<%= image_tag("Clients/Montreal.png", :alt => "client-montreal", width: '150px') %>
+						<%= image_tag("Clients/Montreal.png", :alt => "client-montreal", width: '150px', class:"img-fluid") %>
 					</li>
 					<li class="col-md-3 col-sm-3 col-6">
 						<%# <img class="img-fluid" src="assets/images/Clients/Galerie.png"
 							alt="client-galerie de la capitale" /> %>
-						<%= image_tag("Clients/Galerie.png", :alt => "client-galerie de la capitale", width: '150px') %>
+						<%= image_tag("Clients/Galerie.png", :alt => "client-galerie de la capitale", width: '150px', class:"img-fluid") %>
 					</li>
 					<li class="col-md-3 col-sm-3 col-6">
 						<%# <img class="img-fluid" src="assets/images/Clients/desjardins.png" alt="client-desjardins" /> %>
-						<%= image_tag("Clients/desjardins.png", :alt => "client-desjardins", width: '150px') %>
+						<%= image_tag("Clients/desjardins.png", :alt => "client-desjardins", width: '150px', class:"img-fluid") %>
 					</li>
 					<li class="col-md-3 col-sm-3 col-6">
 						<%# <img class="img-fluid" src="assets/images/Clients/mosaique.png"
 							alt="client-mosaique quartier" /> %>
-						<%= image_tag("Clients/mosaique.png", :alt => "client-mosaique quartier", width: '150px') %>
+						<%= image_tag("Clients/mosaique.png", :alt => "client-mosaique quartier", width: '150px', class:"img-fluid") %>
 
 					</li>
 					<li class="col-md-3 col-sm-3 col-6">
 						<%# <img class="img-fluid" src="assets/images/Clients/Faubourg.png" alt="client-faubourg" /> %>
-						<%= image_tag("Clients/Faubourg.png", :alt => "client-faubourg", width: '150px') %>
+						<%= image_tag("Clients/Faubourg.png", :alt => "client-faubourg", width: '150px', class:"img-fluid") %>
 					</li>
 					<li class="col-md-3 col-sm-3 col-6">
 						<%# <img class="img-fluid" src="assets/images/Clients/laCapitale.png" alt="client-la capitale" /> %>
-						<%= image_tag("Clients/laCapitale.png", :alt => "client-la capitale", width: '150px') %>
+						<%= image_tag("Clients/laCapitale.png", :alt => "client-la capitale", width: '150px', class:"img-fluid") %>
 					</li>
 					<li class="col-md-3 col-sm-3 col-6">
 						<%# <img class="img-fluid" src="assets/images/Clients/td.png" alt="client-td" /> %>
-						<%= image_tag("Clients/td.png", :alt => "client-td", width: '150px') %>
+						<%= image_tag("Clients/td.png", :alt => "client-td", width: '150px', class:"img-fluid") %>
 
 
 					</li>
@@ -1056,148 +878,3 @@
 		</section>
 		<!-- /CONTACT -->
 
-
-
-
-		<!-- FOOTER -->
-		<footer id="footer">
-			<div class="container">
-
-
-				<div class="row">
-
-					<!-- col #1 -->
-					<div class="col-md-6">
-
-						<h3 class="letter-spacing-1">WHY US?</h3>
-
-						<!-- Small Description -->
-						<p>
-							We have the conviction that we create the most innovative and reliable products on the
-							market. Contact us today for any questions you might have.
-						</p>
-						<h2>(418) 555-1234</h2>
-					</div>
-					<!-- /col #1 -->
-
-					<!-- col #2 -->
-					<div class="col-md-2">
-
-						<h3 class="letter-spacing-1">EXPLORE</h3>
-
-						<li class="active">
-							<!-- HOME -->
-							<a href="#">
-								Home
-							</a>
-						</li>
-						<li>
-							<!-- SERVICES -->
-							<a href="#services">
-								Services
-							</a>
-						</li>
-						<li>
-							<!-- PORTFOLIO -->
-							<a href="#portfolio">
-								Portfolio
-							</a>
-						</li>
-						<li>
-							<!-- NEWS -->
-							<a href="#news">
-								News
-							</a>
-						</li>
-
-						<li>
-							<!-- CLIENTS -->
-							<a href="#clients">
-								Clients
-							</a>
-						</li>
-
-						<li>
-							<!-- CONTACT -->
-							<a href="#contact">
-								Contact
-							</a>
-						</li>
-					</div>
-					<!-- /col #2 -->
-
-					<!-- col #3 -->
-					<div class="col-md-4">
-						<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-						<!-- Newsletter Form -->
-						<a class="btn btn-blue btn-lg" href="#contact">CONTACT US <i class="fa fa-angle-right"></i></a>
-
-						<!-- /Newsletter Form -->
-						<p>
-							<br>
-							<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong>418-725
-								Boulevard Lebourgneuf, Québec, QC G2J 0C4, Canada</span>
-							<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a
-									href="tel:(418) 555-1234">(418) 555-1234 </a></span>
-							<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a
-									href="mailto:info@codeboxx.biz">info@codeboxx.biz</a></span>
-						</p>
-
-					</div>
-					<!-- /col #3 -->
-
-				</div>
-
-
-			</div>
-
-			<div class="copyright">
-				<div class="container">
-					<ul class="float-right m-0 list-inline mobile-block">
-						<li><a href="#">Terms &amp; Conditions</a></li>
-						<li>&bull;</li>
-						<li><a href="#">Privacy</a></li>
-					</ul>
-					&copy; All Rights Reserved, Rocket Elevators Inc.
-				</div>
-			</div>
-
-		</footer>
-		<!-- /FOOTER -->
-
-	</div>
-	<!-- /wrapper -->
-
-
-	<!-- SCROLL TO TOP -->
-	<a href="#" id="toTop"></a>
-
-
-	<!-- PRELOADER -->
-	<div id="preloader">
-		<div class="inner">
-			<span class="loader"></span>
-		</div>
-	</div><!-- /PRELOADER -->
-
-
-	<!-- JAVASCRIPT FILES -->
-	<script>var plugin_path = 'assets/plugins/';</script>
-	<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
-
-	<script src="assets/js/scripts.js"></script>
-
-
-
-	<!-- REVOLUTION SLIDER -->
-	<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
-	<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
-	<script src="assets/js/view/demo.revolution_slider.js"></script>
-
-	<!-- PAGELEVEL SCRIPTS -->
-	<script src="assets/js/contact.js"></script>
-
-</body>
-
-</html>
