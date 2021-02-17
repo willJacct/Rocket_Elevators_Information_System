@@ -172,8 +172,7 @@
 					<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="600"
 						data-saveperformance="off" data-title="Homepage">
 						<!-- MAIN IMAGE -->
-						<img src="assets/images/Slide/Slide1.jpeg" alt="cover image - cylindrical elevator"
-							data-bgposition="center" data-bgfit="cover" data-bgrepeat="no-repeat">
+						<%= image_tag("Slide/Slide1.jpeg", :alt => "cover image - cylindrical elevators", :data => "center", :data => "cover", :data => "no-repeat" ) %>
 
 						<div class="tp-caption white_big skewfromleft tp-resizeme" data-x="50" data-y="200"
 							data-speed="400" data-start="1500" data-easing="Power3.easeInOut" data-splitin="words"
@@ -218,6 +217,7 @@
 					<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"
 						data-saveperformance="off" data-title="Service promotions">
 						<!-- MAIN IMAGE -->
+						<%= image_tag("Slide/residentialSlide2.jpeg", :alt => "cover image - person going to second floor", :data => "center top", :data => "cover", :data => "no-repeat" ) %>
 						<img src="assets/images/Slide/residentialSlide2.jpeg"
 							alt="cover image - person going to second floor" data-bgposition="center top"
 							data-bgfit="cover" data-bgrepeat="no-repeat">
@@ -255,8 +255,7 @@
 					<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"
 						data-saveperformance="off" data-title="Commercial promotions">
 						<!-- MAIN IMAGE -->
-						<img src="assets/images/Slide/corporateSlide3.jpeg" alt="cover image - building elevators"
-							data-bgposition="center" data-bgfit="cover" data-bgrepeat="no-repeat">
+						<%= image_tag("Slide/corporateSlide3.jpeg", :alt => "cover image - building elevators", :data => "center", :data => "cover", :data => "no-repeat" ) %>
 
 						<div class="overlay dark-4">
 							<!-- dark overlay [0 to 9 opacity] -->
@@ -312,8 +311,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
-						<img class="img-fluid" src="assets/images/Service/Awards.jpg" alt="Project of the year - award"
-							width="355px" />
+						<%= image_tag("Service/Awards.jpg", :class => "img-fluid", :alt => "Project of the Year - award", :width => "355px") %>
 						<h3 class="mt-10">Our Awards and Projects</h3>
 						<p>Rocket Elevators has many recognitions and projects, come and see and take a look of the most
 							outstanding. </p>
@@ -321,8 +319,7 @@
 					</div>
 
 					<div class="col-sm-4">
-						<img class="img-fluid" src="assets/images/Service/residential.jpg"
-							alt="living room with elevator" width="318px" />
+					<%= image_tag("Service/residential.jpg", :class => "img-fluid", :alt => "living room with elevator", :width => "355px") %>
 						<h3 class="mt-10">Residential Services</h3>
 						<p>You want to renovate your residence, why not place an elevator? take a look at the different
 							styles we have. </p>
@@ -330,8 +327,7 @@
 					</div>
 
 					<div class="col-sm-4">
-						<img class="img-fluid" src="assets/images/Service/commercial.jpg" alt="man holding laptop"
-							width="355px" />
+					<%= image_tag("Service/commercial.jpg", :class => "img-fluid", :alt => "man holding laptop", :width => "355px") %>
 						<h3 class="mt-10">Commercial Services</h3>
 						<p>If you are looking for a quality elevator at a reasonable price for your company, do not
 							hesitate to look at the styles that we have available.</p>
@@ -394,9 +390,7 @@
 						<div class="item-box">
 							<figure>
 
-
-								<img class="img-fluid" src="assets/images/ projects_awards/Award1.jpg" width="600"
-									height="399" alt="Project of the year - award">
+								<%= image_tag(" projects_awards/Award1.jpg", :class => "img-fluid", :width => "600", :height => "399", :alt => "Project of the Year -award") %>
 							</figure>
 
 							<div class="item-box-desc">
@@ -418,8 +412,7 @@
 						<div class="item-box">
 							<figure>
 
-								<img class="img-fluid" src="assets/images/ projects_awards/award2.jpg" width="600"
-									height="399" alt="Canadian business excellence award">
+							<%= image_tag(" projects_awards/award2.jpg", :class => "img-fluid", :width => "600", :height => "399", :alt => "Canadian business excellence award") %>
 							</figure>
 
 							<div class="item-box-desc">
@@ -441,8 +434,7 @@
 						<div class="item-box">
 							<figure>
 
-								<img class="img-fluid" src="assets/images/ projects_awards/award3.jpg" width="600"
-									height="200" alt="Steve Gold Winner- award">
+							<%= image_tag(" projects_awards/award3.jpg", :class => "img-fluid", :width => "600", :height => "399", :alt => "Steve Gold Winnder - award") %>
 							</figure>
 
 							<div class="item-box-desc">
@@ -463,9 +455,7 @@
 
 						<div class="item-box">
 							<figure>
-
-								<img class="img-fluid" src="assets/images/ projects_awards/award4.jpg" width="600"
-									height="399" alt="Design award">
+							<%= image_tag(" projects_awards/award4.jpg", :class => "img-fluid", :width => "600", :height => "399", :alt => "Design award") %>
 							</figure>
 
 							<div class="item-box-desc">
@@ -486,9 +476,7 @@
 
 						<div class="item-box">
 							<figure>
-
-								<img class="img-fluid" src="assets/images/ projects_awards/award5.png" width="600"
-									height="399" alt="Boma best certificate">
+							<%= image_tag(" projects_awards/award5.png", :class => "img-fluid", :width => "600", :height => "399", :alt => "Design award") %>
 							</figure>
 
 							<div class="item-box-desc">
@@ -509,9 +497,7 @@
 
 						<div class="item-box">
 							<figure>
-
-								<img class="img-fluid" src="assets/images/ projects_awards/project1.jpg" width="600"
-									height="399" alt="singapore airport elevator">
+							<%= image_tag(" projects_awards/project1.jpg", :class => "img-fluid", :width => "600", :height => "399", :alt => "Singapore airport elevator") %>
 							</figure>
 
 							<div class="item-box-desc">
@@ -532,9 +518,7 @@
 
 						<div class="item-box">
 							<figure>
-
-								<img class="img-fluid" src="assets/images/ projects_awards/project2.jpg" width="600"
-									height="399" alt="frontenac castle elevator">
+							<%= image_tag(" projects_awards/project2.jpg", :class => "img-fluid", :width => "600", :height => "399", :alt => "Frontenac Castle elevator") %>
 							</figure>
 
 							<div class="item-box-desc">
@@ -555,9 +539,7 @@
 
 						<div class="item-box">
 							<figure>
-
-								<img class="img-fluid" src="assets/images/ projects_awards/project3.jpg" width="600"
-									height="399" alt="Path elevators">
+							<%= image_tag(" projects_awards/project3.jpg", :class => "img-fluid", :width => "600", :height => "399", :alt => "Path elevators") %>
 							</figure>
 
 							<div class="item-box-desc">
@@ -578,9 +560,7 @@
 
 						<div class="item-box">
 							<figure>
-
-								<img class="img-fluid" src="assets/images/ projects_awards/project4.jpg" width="600"
-									height="399" alt="Madrid - subway streed elevator">
+							<%= image_tag(" projects_awards/project4.jpg", :class => "img-fluid", :width => "600", :height => "399", :alt => "Madrid - subway street elevator") %>
 							</figure>
 
 							<div class="item-box-desc">
@@ -601,7 +581,7 @@
 
 						<div class="item-box">
 							<figure>
-
+							<%= image_tag(" projects_awards/project3.jpg", :class => "img-fluid", :width => "600", :height => "399", :alt => "Dinning room with elevator") %>
 								<img class="img-fluid" src="assets/images/ projects_awards/project5.jpg" width="600"
 									height="399" alt="dinning room with elevator">
 							</figure>
