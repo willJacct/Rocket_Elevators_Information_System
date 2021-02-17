@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root 'pages#index'
   root 'pages#residential'
   root 'pages#commercial'
-  root 'pages#quotes'
+  root 'pages#quote'
   get "quote" => "pages#quote"
+  #get "residential" => "pages#residential"
+
 end
