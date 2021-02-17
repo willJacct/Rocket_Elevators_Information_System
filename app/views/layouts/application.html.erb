@@ -47,8 +47,8 @@
 <%
 =end%>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
 </head>
 
 
@@ -285,7 +285,7 @@
         var plugin_path = 'assets/plugins/';
     </script>
     <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
-
+    <script src="/assets/javascripts/smothscroll.js"></script>
     <script src="assets/js/scripts.js"></script>
 
 
@@ -302,3 +302,22 @@
 </body>
 
 </html>
+<%# <script type="text/javascript">
+  $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() & gt; 600) {
+            $(".scrollToTop").fadeIn(1000)
+          } else {
+            $(".scrollToTop").fadeOut(1000);
+          }
+        });
+
+        //Click event to scroll to top
+        $(".scrollToTop").click(function () {
+          $('html, body').animate({
+            scrollTop: 0
+          }, 500);
+          return false;
+        });
+      })
+</script> %>
