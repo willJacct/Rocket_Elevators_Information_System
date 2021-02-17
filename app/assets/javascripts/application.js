@@ -19,8 +19,6 @@
 //= require jquery-ui
 //= require bootstrap-sprockets
 //= require bootstrap.min
-//= require jquery3
-//= require popper
 //= require bootstrap
 //= require activestorage
 //= require turbolinks
