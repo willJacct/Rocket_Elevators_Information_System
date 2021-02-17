@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 	<link rel="icon" href="assets/images/Logo/web_logo.png">
 	<meta charset="utf-8" />
 	<title>Rocket Elevators - Quote</title>
@@ -332,113 +333,7 @@
 
 
 
-		<!-- FOOTER -->
-		<footer id="footer">
-			<div class="container">
-
-
-				<div class="row">
-
-					<!-- col #1 -->
-					<div class="col-md-6">
-
-						<h3 class="letter-spacing-1">WHY US?</h3>
-
-						<!-- Small Description -->
-						<p>
-							We have the conviction that we create the most innovative and reliable products on the
-							market. Contact us today for any questions you might have.
-						</p>
-						<h2>(418) 555-1234</h2>
-					</div>
-					<!-- /col #1 -->
-
-					<!-- col #2 -->
-					<div class="col-md-2">
-
-						<h3 class="letter-spacing-1">EXPLORE</h3>
-
-						<li class="active">
-							<!-- HOME -->
-							<a href="#">
-								Home
-							</a>
-						</li>
-						<li>
-							<!-- SERVICES -->
-							<a href="index.html#services">
-								Services
-							</a>
-						</li>
-						<li>
-							<!-- PORTFOLIO -->
-							<a href="index.html#portfolio">
-								Portfolio
-							</a>
-						</li>
-						<li>
-							<!-- NEWS -->
-							<a href="index.html#news">
-								News
-							</a>
-						</li>
-
-						<li>
-							<!-- CLIENTS -->
-							<a href="index.html#clients">
-								Clients
-							</a>
-						</li>
-
-						<li>
-							<!-- CONTACT -->
-							<a href="index.html#contact">
-								Contact
-							</a>
-						</li>
-					</div>
-					<!-- /col #2 -->
-
-					<!-- col #3 -->
-					<div class="col-md-4">
-						<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-						<!-- Newsletter Form -->
-						<a class="btn btn-blue btn-lg" href="index.html#contact">CONTACT US <i
-								class="fa fa-angle-right"></i></a>
-
-						<!-- /Newsletter Form -->
-						<p>
-							<br>
-							<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong>418-725
-								Boulevard Lebourgneuf, Québec, QC G2J 0C4, Canada</span>
-							<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a
-									href="tel:(418) 555-1234">(418) 555-1234 </a></span>
-							<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a
-									href="mailto:info@codeboxx.biz">info@codeboxx.biz</a></span>
-						</p>
-					</div>
-					<!-- /col #3 -->
-
-				</div>
-
-
-			</div>
-
-			<div class="copyright">
-				<div class="container">
-					<ul class="float-right m-0 list-inline mobile-block">
-						<li><a href="#">Terms &amp; Conditions</a></li>
-						<li>&bull;</li>
-						<li><a href="#">Privacy</a></li>
-					</ul>
-					&copy; All Rights Reserved, Rocket Elevators Inc.
-				</div>
-			</div>
-
-		</footer>
-		<!-- /FOOTER -->
-
+	
 	</div>
 	<!-- /wrapper -->
 
@@ -469,7 +364,23 @@
 	<script src="assets/js/view/demo.revolution_slider.js"></script>
 
 	<!-- PAGELEVEL SCRIPTS -->
-	<script src="assets/js/contact.js"></script>
+			<script>
+				$("#my_form").submit(function(event){
+					event.preventDefault(); //prevent default action 
+					var post_url = $(this).attr("action"); //get form action url
+					var request_method = $(this).attr("method"); //get form GET/POST method
+					var form_data = $(this).serialize(); //Encode form elements for submission
+					
+					$.ajax({
+						url : post_url,
+						type: request_method,
+						data : form_data
+					}).done(function(response){ //
+						alert('YOUR SUBMISSION HAVE BEEN RECEIVED');
+						window.location="/";
+					});
+				});
+			</script>
 
 
 </body>
