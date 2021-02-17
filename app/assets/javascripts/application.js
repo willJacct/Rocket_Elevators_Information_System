@@ -16,7 +16,6 @@
 
 //= require jquery
 // = require jquery-ui
-//= require turbolinks
 //= require bootstrap-sprockets
 //= require bootstrap.min
 //= require bootstrap
