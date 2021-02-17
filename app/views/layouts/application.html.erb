@@ -80,6 +80,9 @@
 				Example Usage:  class="clearfix sticky header-sm transparent b-0"
 			-->
         <div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+            <% flash.each do |key, value| %>
+                <div class= "alert alert -<%= key %> col-md-8 col md-offset-2-main"><%= value %></div>
+            <%end%>
 
             <!-- TOP NAV -->
             <header id="topNav">
