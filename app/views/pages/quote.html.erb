@@ -11,11 +11,23 @@
 					<div class="col-sm-12">
 						<form>
 							<fieldset>
-								<div>
-									<label for="contact:email">E-mail*</label>
-									<input id=email required type="email" value="" class="form-control"
-										name="contact[email][required]" id="contact:email">
+								<div class="row">
+									<div class="col-md-4">
+										<label for="contact:name">Contact Full Name *</label>
+										<input id="name" required type="text" value="" class="form-control"
+											name="contact[name][required]" id="contact:name">
+									</div>
+									<div class="col-md-4">
+										<label for="contact:email">E-mail*</label>
+										<input id=email required type="email" value="" class="form-control"
+											name="contact[email][required]" id="contact:email">
+									</div>
+									<div class="col-md-4">
+										<label for="contact:phone">Phone number</label>
+										<input id="phone" type="text" value="" class="form-control" name="contact[phone]"
+											id="contact:phone">
 								</div>
+							</div>
 								<form>
 									<label for="building_type">Building Type</label>
 									<select id="building_type" class="form-control pointer" style="width: 200px;"
