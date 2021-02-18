@@ -155,14 +155,14 @@
                                 </li>
                                 <% if user_signed_in? %>
                                     <li class="nav-item">
-                                        <%= link_to "SING OUT", destroy_users_session_path, methode: :delete, class: 'nav-link' %>
+                                        <%= link_to "SIGN OUT", destroy_user_session_path, method: :delete, class: 'nav-link' %>
                                     </li>
                                 <% else %>
                                     <li class="nav-item">
                                         <%= link_to "REGISTRATION", new_user_registration_path, class: 'nav-link' %>
                                     </li>
                                     <li class="nav-item">
-                                        <%= link_to "SING IN", new_user_session_path, class: 'nav-link' %>
+                                        <%= link_to "SIGN IN", new_user_session_path, class: 'nav-link' %>
                                     </li>
                                 <% end %> 
                             </ul>
