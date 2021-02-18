@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get "quote" => "pages#quote"
 
-  get "index"  => "pages#index"
+  get "/"  => "pages#index"
 
   root to:'pages#index'
 
