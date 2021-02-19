@@ -156,6 +156,9 @@
                                 <% if user_signed_in? %>
                                     <li class="nav-item">
                                         <%= link_to "SIGN OUT", destroy_user_session_path, method: :delete, class: 'nav-link' %>
+                                        </li>
+                                    <li class="nav-item"
+                                        <%= link_to "ADMIN", admin_admin_users_path, class: 'nav-link' %>
                                     </li>
                                 <% else %>
                                     <li class="nav-item">
