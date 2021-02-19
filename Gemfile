@@ -75,3 +75,6 @@ gem 'bootstrap-social-rails'
 
 gem 'devise'
 
+gem 'ed25519', '~> 1.2' 
+gem 'bcrypt_pbkdf', '~>1' 
+
