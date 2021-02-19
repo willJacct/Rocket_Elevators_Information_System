@@ -9,7 +9,7 @@
 				</header>
 				<div class="row">
 					<div class="col-sm-12">
-						<form>
+						<form action = "/quote"  method = "post">
 							<fieldset>
 								<div class="row">
 									<div class="col-md-4">
@@ -228,20 +228,4 @@
 
 
 
-			<script>
-				$("#my_form").submit(function(event){
-					event.preventDefault(); //prevent default action 
-					var post_url = $(this).attr("action"); //get form action url
-					var request_method = $(this).attr("method"); //get form GET/POST method
-					var form_data = $(this).serialize(); //Encode form elements for submission
-					
-					$.ajax({
-						url : post_url,
-						type: request_method,
-						data : form_data
-					}).done(function(response){ //
-						alert('YOUR SUBMISSION HAVE BEEN RECEIVED');
-						window.location="/";
-					});
-				});
-			</script>
+	
