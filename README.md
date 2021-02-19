@@ -13,14 +13,14 @@ First name
 Title or Function
 
 The following officers were added as principal staff of the organization with login privileges:
-first_name	last_name			title					email	
-Nicolas		Genest				CEO				nicolas.genest@codeboxx.biz	
-Nadya		Fortier				Director				nadya.fortier@codeboxx.biz	
-Martin		Chantal				Director Assistant		martin.chantal@codeboxx.biz	
-Mathieu		Houde				Captain				mathieu.houde@codeboxx.biz	
-David		Boutin				Engineer				david.boutin@codeboxx.biz	
-Mathieu		Lortie				Engineer				mathieu.lortie@codeboxx.biz	
-Thomas		Carrier				Engineer				thomas.carrier@codeboxx.biz
+first_name	      last_name			title					      email	
+Nicolas		      Genest				CEO				         nicolas.genest@codeboxx.biz	
+Nadya		         Fortier				Director				      nadya.fortier@codeboxx.biz	
+Martin		      Chantal				Director Assistant		martin.chantal@codeboxx.biz	
+Mathieu		      Houde				   Captain				      mathieu.houde@codeboxx.biz	
+David		         Boutin				Engineer				      david.boutin@codeboxx.biz	
+Mathieu		      Lortie				Engineer				      mathieu.lortie@codeboxx.biz	
+Thomas		      Carrier				Engineer				      thomas.carrier@codeboxx.biz
 
 The default password is 012345
 
@@ -29,7 +29,7 @@ An example is shown below
 ```
 {
 Username: mathieu.houde@codeboxx.biz
-   password: 012345
+password: 012345
 }
 ```
 
@@ -45,14 +45,9 @@ Rails version - Rails version 5.2.4.2
 
 Dependencies  - HTML 5, CSS 3, Javascript, Bootstrap, MySqL, Postgres, Ruby on rails, Ubuntu
 
-Database initialization - rake db:seed
+Database initialization - ```rake db:seed```
 
 
-Services (job queues, cache servers, search engines, etc.)
-
-
-
-Deployment instructions
 
 # Contributors
 https://github.com/WillJacct - Will Johnson
