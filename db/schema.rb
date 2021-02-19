@@ -12,14 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2021_02_19_040412) do
 
-  create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "last_name", null: false
-    t.string "first_name", null: false
-    t.string "email", null: false
-    t.string "title", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "building_type"
@@ -40,6 +32,21 @@ ActiveRecord::Schema.define(version: 2021_02_19_040412) do
     t.float "final_price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+
+ActiveRecord::Schema.define(version: 2021_02_19_171101) do
+
+  create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "last_name"
+    t.string "first_name"
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["first_name"], name: "index_employees_on_first_name"
+    t.index ["last_name"], name: "index_employees_on_last_name"
+    t.index ["title"], name: "index_employees_on_title"
+    t.index ["user_id"], name: "index_employees_on_user_id"
+
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -51,6 +58,7 @@ ActiveRecord::Schema.define(version: 2021_02_19_040412) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["id"], name: "index_users_on_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
