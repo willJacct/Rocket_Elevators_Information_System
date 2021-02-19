@@ -9,13 +9,13 @@
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
 
 puts " Creating Users"
-User.create!(email: 'nicolas.genest@codeboxx.biz', password: '012345')
-User.create!(email: 'nadya.fortier@codeboxx.biz', password: '012345')
-User.create!(email: 'martin.chantal@codeboxx.biz', password: '012345')
-User.create!(email: 'mathieu.houde@codeboxx.biz', password: '012345')
-User.create!(email: 'david.boutin@codeboxx.biz', password: '012345')
-User.create!(email: 'mathieu.lortie@codeboxx.biz', password: '012345')
-User.create!(email: 'thomas.carrier@codeboxx.biz', password: '012345')
+AdminUser.create!(email: 'nicolas.genest@codeboxx.biz', password: '012345')
+AdminUser.create!(email: 'nadya.fortier@codeboxx.biz', password: '012345')
+AdminUser.create!(email: 'martin.chantal@codeboxx.biz', password: '012345')
+AdminUser.create!(email: 'mathieu.houde@codeboxx.biz', password: '012345')
+AdminUser.create!(email: 'david.boutin@codeboxx.biz', password: '012345')
+AdminUser.create!(email: 'mathieu.lortie@codeboxx.biz', password: '012345')
+AdminUser.create!(email: 'thomas.carrier@codeboxx.biz', password: '012345')
 
 puts "Creating Employees"
 Employee.create!( last_name: 'Genest', first_name: 'Nicolas', title: "CEO", user_id: 1)
