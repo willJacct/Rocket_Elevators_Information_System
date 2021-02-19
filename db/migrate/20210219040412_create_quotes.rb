@@ -18,6 +18,7 @@ class CreateQuotes < ActiveRecord::Migration[5.2]
       t.float :installation_fees
       t.float :final_price 
 
+
       t.timestamps
     end
   end
