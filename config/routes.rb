@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get "commercial" => "pages#commercial"
 
   get "quote" => "pages#quote"
-  #post 'quote /create'
+
+  post "quote" => "quotes#create"
 
   get "/"  => "pages#index"
 
@@ -17,5 +18,4 @@ Rails.application.routes.draw do
   devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
-
 end
