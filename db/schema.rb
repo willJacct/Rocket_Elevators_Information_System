@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_19_040412) do
+ActiveRecord::Schema.define(version: 2021_02_20_014207) do
 
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -26,10 +26,10 @@ ActiveRecord::Schema.define(version: 2021_02_19_040412) do
     t.string "service_level"
     t.integer "columns_required"
     t.integer "elevators_required"
-    t.float "elevator_unit_price"
-    t.float "elevator_total_price"
-    t.float "installation_fees"
-    t.float "final_price"
+    t.string "elevator_unit_price"
+    t.string "elevator_total_price"
+    t.string "installation_fees"
+    t.string "final_price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
 
