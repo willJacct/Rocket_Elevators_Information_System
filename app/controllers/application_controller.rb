@@ -9,5 +9,6 @@ class ApplicationController < ActionController::Base
 #         devise_parameter_sanitizer.for(:sign_up){ |u| u.permit(:first_name, :last_name, :email, :password, :password_configuration)}
 
 #     end
-    protect_from_forgery with: :null_session
+    protect_from_forgery prepend: true, with: :exception
+    skip_before_action :verify_authenticity_token
 end

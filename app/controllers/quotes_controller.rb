@@ -9,7 +9,7 @@ class QuotesController < ApplicationController
      
         quotes = Quote.new
         quotes.name = params[:name]
-        quotes.email= params[:email]
+        quotes.email_quote= params[:email]
         quotes.phone= params[:phone]
         quotes.building_type = params[:building_type]
         quotes.number_apartments_residential = params[:number_apartments_residential]
@@ -39,6 +39,11 @@ class QuotesController < ApplicationController
         quotes.final_price = params[:final_price]
         quotes.save!
     end
-
-
+    def quotes_
+        render '/pages/quote'
+    end
+  
+    def show
+        redirect_to '/admin/quote'
+    end
 end
