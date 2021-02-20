@@ -7,5 +7,7 @@ class ApplicationController < ActionController::Base
 #     #To permit new custom attributes to be verified as attributes permitted by the form
 #     def configure_permitted_parameters
 #         devise_parameter_sanitizer.for(:sign_up){ |u| u.permit(:first_name, :last_name, :email, :password, :password_configuration)}
+
 #     end
+    protect_from_forgery with: :null_session
 end

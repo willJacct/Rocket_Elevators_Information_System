@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get "commercial" => "pages#commercial"
 
   get "quote" => "pages#quote"
-  post 'quote /create'
+
+  post "quote" => "quotes#create"
 
   get "/"  => "pages#index"
 
