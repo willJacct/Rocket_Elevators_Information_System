@@ -14,7 +14,6 @@
 ActiveRecord::Schema.define(version: 2021_02_20_011625) do
 
 
-
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -39,6 +38,7 @@ ActiveRecord::Schema.define(version: 2021_02_20_011625) do
     t.datetime "updated_at", null: false
 
 ActiveRecord::Schema.define(version: 2021_02_19_171101) do
+
 
 
   create_table "active_admin_comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -81,6 +81,19 @@ ActiveRecord::Schema.define(version: 2021_02_19_171101) do
   end
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+
+    t.string "building_type"
+    t.integer "number_floors"
+    t.integer "number_apartments"
+    t.integer "number_basements"
+    t.integer "number_companies"
+    t.integer "number_parking"
+    t.integer "number_elevators"
+    t.integer "number_occupants"
+    t.integer "number_of_corporations"
+    t.string "service_level"
+    t.integer "columns_required"
+
     t.string "name"
     t.string "email"
     t.string "phone"
@@ -105,6 +118,7 @@ ActiveRecord::Schema.define(version: 2021_02_19_171101) do
     t.string "number_occupants_hybrid"
     t.string "number_hours_act"
     t.string "service_level"
+
     t.integer "elevators_required"
     t.string "elevator_unit_price"
     t.string "elevator_total_price"
