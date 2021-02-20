@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_20_041953) do
+
+ActiveRecord::Schema.define(version: 2021_02_20_011625) do
+
 
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -37,6 +39,7 @@ ActiveRecord::Schema.define(version: 2021_02_20_041953) do
     t.datetime "updated_at", null: false
 
 ActiveRecord::Schema.define(version: 2021_02_19_171101) do
+
 
   create_table "active_admin_comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "namespace"
@@ -75,7 +78,40 @@ ActiveRecord::Schema.define(version: 2021_02_19_171101) do
     t.index ["last_name"], name: "index_employees_on_last_name"
     t.index ["title"], name: "index_employees_on_title"
     t.index ["user_id"], name: "index_employees_on_user_id"
+  end
 
+  create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "phone"
+    t.string "building_type"
+    t.string "number_apartments_residential"
+    t.string "number_floors_residential"
+    t.string "number_basements_residential"
+    t.string "number_companies"
+    t.string "number_floors_commercial"
+    t.string "number_basements_commercial"
+    t.string "number_parking_commercial"
+    t.string "number_elevators"
+    t.string "number_corporate"
+    t.string "number_floors_corporate"
+    t.string "number_basements_corporate"
+    t.string "number_parking_corporate"
+    t.string "number_occupants_corporate"
+    t.string "number_of_corporations"
+    t.string "number_floors_hydrid"
+    t.string "number_basements_hybrid"
+    t.string "number_parking_hybrid"
+    t.string "number_occupants_hybrid"
+    t.string "number_hours_act"
+    t.string "service_level"
+    t.integer "elevators_required"
+    t.string "elevator_unit_price"
+    t.string "elevator_total_price"
+    t.string "installation_fees"
+    t.string "final_price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
