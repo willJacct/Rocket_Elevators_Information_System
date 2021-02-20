@@ -15,12 +15,12 @@ Title or Function
 The following officers were added as principal staff of the organization with login privileges:
 first_name	      last_name			title					      email	
 Nicolas		        Genest				CEO				          nicolas.genest@codeboxx.biz	
-Nadya		          Fortier				Director				    nadya.fortier@codeboxx.biz	
-Martin		        Chantal				Director Assistant	martin.chantal@codeboxx.biz	
-Mathieu		        Houde				  Captain				      mathieu.houde@codeboxx.biz	
-David		          Boutin				Engineer				    david.boutin@codeboxx.biz	
-Mathieu		        Lortie				Engineer				    mathieu.lortie@codeboxx.biz	
-Thomas		        Carrier				Engineer				    thomas.carrier@codeboxx.biz
+Nadya		        Fortier				Director				  nadya.fortier@codeboxx.biz	
+Martin		        Chantal				Director Assistant	      martin.chantal@codeboxx.biz	
+Mathieu		        Houde				Captain				      mathieu.houde@codeboxx.biz	
+David		        Boutin				Engineer				  david.boutin@codeboxx.biz	
+Mathieu		        Lortie				Engineer				  mathieu.lortie@codeboxx.biz	
+Thomas		        Carrier				Engineer		          thomas.carrier@codeboxx.biz
 
 The default password is 012345
 
