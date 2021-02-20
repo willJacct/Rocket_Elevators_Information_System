@@ -176,3 +176,5 @@ function installationFeesFun(value) {
 function finalPriceFun() {
 	document.getElementById("finalPrice").value = new Intl.NumberFormat("en-US", { style: "currency", currency: "CAD" }).format(totalPrice + installationFees);
 } 
+
+<%= link_to "ADMIN", admin_admin_users_path%>

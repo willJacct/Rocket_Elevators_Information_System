@@ -25,4 +25,3 @@ Employee.create!( last_name: 'Houde', first_name: 'Mathieu', title: "Captain", u
 Employee.create!( last_name: 'Boutin', first_name: 'David', title: "Engineer", user_id: 5)
 Employee.create!( last_name: 'Lortie', first_name: 'Mathieu', title: "Engineer", user_id: 6)
 Employee.create!( last_name: 'Carrier',first_name: 'Thomas',  title: "Engineer", user_id: 7)
-
