@@ -1,12 +1,12 @@
 class QuotesController < ApplicationController
     def index
-    
+
     end
 
     def create
-        
+
         #pp params
-     
+
         quotes = Quote.new
         quotes.name = params[:name]
         quotes.email= params[:email]
@@ -15,6 +15,10 @@ class QuotesController < ApplicationController
         quotes.number_apartments_residential = params[:number_apartments_residential]
         quotes.number_floors_residential = params[:number_floors_residential]
         quotes.number_basements_residential = params[:number_basements_residential]
+        quotes.number_floors = params[:number_floors]
+        quotes.number_apartments = params[:number_apartments]
+        quotes.number_basements = params[:number_basements]
+
         quotes.number_companies = params[:number_companies]
         quotes.number_floors_commercial = params[:number_floors_commercial]
         quotes.number_basements_commercial = params[:number_basements_commercial]
@@ -31,6 +35,9 @@ class QuotesController < ApplicationController
         quotes.number_parking_hybrid = params[:number_parking_hybrid]
         quotes.number_occupants_hybrid =params[:number_occupants_hybrid]
         quotes.number_hours_act = params[:number_hours_act]
+
+        #quotes.number_hours_act = params [:number_hours_act]
+
         quotes.service_level = params[:service_level]
         quotes.elevators_required = params[:elevators_required]
         quotes.elevator_unit_price = params[:elevator_unit_price]
@@ -38,6 +45,7 @@ class QuotesController < ApplicationController
         quotes.installation_fees = params[:installation_fees]
         quotes.final_price = params[:final_price]
         quotes.save!
+
     end
 
 

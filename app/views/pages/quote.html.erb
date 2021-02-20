@@ -15,16 +15,27 @@
 									<div class="col-md-4">
 										<label for="contact:name">Contact Full Name *</label>
 										<input id="name" required type="text" value="" class="form-control"
+
 											name="name" >
+
 									</div>
 									<div class="col-md-4">
 										<label for="contact:email">E-mail*</label>
 										<input id=email required type="email" value="" class="form-control"
+
 											name="email" >
 									</div>
 									<div class="col-md-4">
 										<label for="contact:phone">Phone number</label>
 										<input id="phone" type="text" value="" class="form-control" name="phone">
+
+											name="email" id="contact:email">
+									</div>
+									<div class="col-md-4">
+										<label for="contact:phone">Phone number</label>
+										<input id="phone" type="text" value="" class="form-control" name="phone"
+											id="contact:phone">
+
 								</div>
 							</div>
 								<%# <form> %>
@@ -71,7 +82,10 @@
 									<div id="number-of-floors" style="display:none ;" class="form-field-commercial">
 										<label for="numFloors_com">Number of floors contained in the building *</label>
 										<input id="numFloors_com" required type="number" class="form-control"
+
 											name="number_floors_commercial" min="1">
+
+
 									</div>
 									<div id="number-of-basements" style="display:none ;" class="form-field-commercial">
 										<label for="numBasements_com">Number of basements contained in the building
@@ -240,7 +254,7 @@
 						type: request_method,
 						data : form_data
 					}).done(function(response){ //
-						alert('YOUR SUBMISSION HAVE BEEN RECEIVED');
+						alert('YOUR SUBMISSION HAS BEEN RECEIVED');
 						window.location="/";
 					});
 				});

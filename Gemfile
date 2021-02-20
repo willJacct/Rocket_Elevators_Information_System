@@ -72,7 +72,7 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'font-awesome-sass', '~> 4.7.0'
 gem 'jquery-ui-rails'
 gem 'bootstrap-social-rails'
-
+gem 'activeadmin'
 gem 'devise'
 
 gem 'ed25519', '~> 1.2' 
